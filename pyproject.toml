@@ -1,0 +1,75 @@
+[build-system]
+  build-backend = "poetry.core.masonry.api"
+  requires      = ["poetry-core>=1.0.0"]
+
+[tool.isort]
+  force_single_line = true
+  line_length       = 120
+  no_lines_before   = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY"]
+  no_sections       = true
+
+[tool.poetry]
+  authors     = ["jjlorenzo <jjlorenzo@users.noreply.github.com>"]
+  classifiers = ["Private :: Acme"]
+  description = ""
+  license     = "Proprietary"
+  name        = "acme.service.oculus"
+  packages    = [{ from = "src", include = "acme" }]
+  readme      = "README.md"
+  version     = "0.1.0"
+
+  [tool.poetry.dependencies]
+    django          = "^4.0.1"
+    psycopg2-binary = "^2.9.3"
+    python          = "^3.10"
+
+  [tool.poetry.dev-dependencies]
+    flake8                      = "^4.0.1"
+    isort                       = "^5.10.1"
+    mkdocs                      = "^1.2.3"
+    mkdocs-awesome-pages-plugin = "^2.6.1"
+    mkdocs-material             = "^8.1.6"
+    pyproject-flake8            = "^0.0.1-alpha.2"
+    yapf                        = "^0.32.0"
+
+[tool.yapf]
+  align_closing_bracket_with_visual_indent            = true
+  allow_multiline_dictionary_keys                     = false
+  allow_multiline_lambdas                             = true
+  allow_split_before_default_or_named_assigns         = true
+  allow_split_before_dict_value                       = false
+  arithmetic_precedence_indication                    = true
+  blank_line_before_module_docstring                  = true
+  blank_line_before_nested_class_or_def               = true
+  blank_lines_around_top_level_definition             = 2
+  blank_lines_between_top_level_imports_and_variables = 1
+  coalesce_brackets                                   = true
+  column_limit                                        = 120
+  continuation_align_style                            = "space"
+  continuation_indent_width                           = 2
+  dedent_closing_brackets                             = true
+  disable_ending_comma_heuristic                      = false
+  each_dict_entry_on_separate_line                    = true
+  force_multiline_dict                                = true
+  indent_blank_lines                                  = false
+  indent_closing_brackets                             = false
+  indent_dictionary_value                             = false
+  indent_width                                        = 2
+  join_multiple_lines                                 = false
+  space_between_ending_comma_and_closing_bracket      = false
+  space_inside_brackets                               = false
+  spaces_around_default_or_named_assign               = false
+  spaces_around_dict_delimiters                       = false
+  spaces_around_list_delimiters                       = false
+  spaces_around_power_operator                        = true
+  spaces_around_subscript_colon                       = false
+  spaces_around_tuple_delimiters                      = false
+  spaces_before_comment                               = 2
+  split_arguments_when_comma_terminated               = true
+  split_before_dict_set_generator                     = false
+  split_before_dot                                    = false
+  split_before_expression_after_opening_paren         = true
+  split_before_logical_operator                       = false
+  split_before_named_assigns                          = false
+  split_complex_comprehension                         = true
+  use_tabs                                            = false

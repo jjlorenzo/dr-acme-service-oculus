@@ -1,0 +1,14 @@
+dev_addr: 127.0.0.1:8001
+
+docs_dir: src/acme/service/oculus/docs
+
+site_name: "acme.service.oculus"
+
+theme:
+  features:
+    - navigation.expand
+    - navigation.top
+  language: en
+  name: material
+  palette:
+    primary: green
