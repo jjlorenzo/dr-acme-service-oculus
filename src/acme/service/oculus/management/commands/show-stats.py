@@ -1,4 +1,7 @@
 import django.core.management.base
+import json
+import sys
+from ... import models
 
 
 class Command(django.core.management.base.BaseCommand):
@@ -9,4 +12,17 @@ class Command(django.core.management.base.BaseCommand):
     pass
 
   def handle(self, *args, **options):
-    self.stdout.write(self.style.SUCCESS("✔ OK"))
+    applications = models.Application.objects.all()
+    response = {
+      "application": {
+        "count": applications.count(),
+        "items": [{
+          "id": str(application.id),
+          "name": application.name,
+          "apikey": application.apikey,
+          "active": application.active,
+        } for application in applications],
+      },
+    }
+    self.stdout.write(json.dumps(response, indent=2))
+    sys.exit(0)
