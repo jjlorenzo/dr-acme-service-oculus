@@ -30,7 +30,17 @@
     mkdocs-awesome-pages-plugin = "^2.6.1"
     mkdocs-material             = "^8.1.6"
     pyproject-flake8            = "^0.0.1-alpha.2"
+    pytest                      = "^6.2.5"
+    pytest-django               = "^4.5.2"
+    pytest-testmon              = "^1.2.2"
+    pytest-watch                = "^4.2.0"
     yapf                        = "^0.32.0"
+
+
+[tool.pytest]
+  [tool.pytest.ini_options]
+    cache_dir = ".venv/pytest-cache"
+    testpaths = ["tests"]
 
 [tool.yapf]
   align_closing_bracket_with_visual_indent            = true
