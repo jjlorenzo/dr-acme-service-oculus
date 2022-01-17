@@ -6,11 +6,8 @@ from django.db import models
 
 
 def get_decrypted_apikey(*, apikey, salt="apikey.application.oculus.service.acme"):
-  try:
-    obj = django.core.signing.loads(apikey, salt=salt)
-    return obj
-  except django.core.signing.BadSignature:
-    return None
+  obj = django.core.signing.loads(apikey, salt=salt)
+  return obj
 
 
 def get_encrypted_apikey(*, salt="apikey.application.oculus.service.acme"):
@@ -31,9 +28,11 @@ class Application(models.Model):
   def authenticate(cls, *, apikey: str) -> typing.Union["Application", None]:
     """
     """
-    if get_decrypted_apikey(apikey=apikey):
-      obj = cls.objects.get(apikey=apikey, active=True)
-      return obj
+    if apikey.startswith("ApiKey "):
+      apikey = apikey[7:]
+    get_decrypted_apikey(apikey=apikey)
+    obj = cls.objects.get(apikey=apikey, active=True)
+    return obj
 
   @classmethod
   def create(cls, *, name: str) -> "Application":

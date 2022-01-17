@@ -33,6 +33,13 @@ MIDDLEWARE = [
   "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+REST_FRAMEWORK = {
+  "DEFAULT_AUTHENTICATION_CLASSES": [],
+  "DEFAULT_PERMISSION_CLASSES": [],
+  "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
+  "UNAUTHENTICATED_USER": None,
+}
+
 ROOT_URLCONF = "acme.service.oculus.urls"
 
 SECRET_KEY = "f6dvs8*3==y@^pmgd)5f^+r$h0*#9&)2@9)=7qnm)6r3ahl3bx"
