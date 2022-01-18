@@ -11,14 +11,15 @@ from rest_framework import viewsets
 
 class ViewSet(viewsets.ViewSet):
   """
+  ViewSet for `Event` ingress, mounted at `/ingress/api/events`.
   """
 
   def create(self, request):
     """
-    Handle Ingress Events creation `/ingress/api/events`.
-    This is the most important endpoint of oculus, the one that should receive more traffic:
-    - enqueue the received data (using the distributed task queue Celery)
-    - acknowledge the reception to Application (client)
+    This endpoint should receive almost all traffic, so it doesn't process events at realtime, instead:
+
+      - enqueue data using the distributed task queue (Celery)
+      - acknowledge the reception of data
     """
     create.apply_async(
       kwargs={
@@ -110,15 +111,13 @@ class CreateSerializer(serializers.Serializer):
 
   def validate(self, validate_data):
     """
-    Final validation stage of received data:
-    - checks auth credentials
-    - rename received data props:
-      - data -> payload
-      - session_id -> session
-    - apply specifics payload validation, depending on category and name
+    Final validation stage:
 
-    Returns:
-    The returned data is ready to be used for `models.Event` attrs at `self.create()`
+      - checks auth credentials
+      - rename received data props:
+          - data to payload
+          - session_id to session
+      - apply specifics payload validation, depending on category and name
     """
     try:
       models.Application.authenticate(apikey=self.context["auth"])

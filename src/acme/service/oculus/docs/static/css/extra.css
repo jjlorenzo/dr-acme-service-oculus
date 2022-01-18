@@ -1,0 +1,17 @@
+div.doc-contents:not(.first) {
+  padding-left: 25px;
+  border-left: 4px solid rgba(230, 230, 230);
+  margin-bottom: 80px;
+}
+
+.md-main__inner.md-grid {
+  max-width: 81rem; /* 61rem; */
+}
+
+.md-sidebar.md-sidebar--secondary {
+  width: 24.1rem; /* 12.1rem; */
+}
+
+.doc-property-marshmallow-model {
+  display: none;
+}
