@@ -1,0 +1,2991 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
+    
+    
+      
+        <title>Code reference - Oculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../static/css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#acme.service.oculus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Oculus" class="md-header__button md-logo" aria-label="Oculus" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Oculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Oculus" class="md-nav__button md-logo" aria-label="Oculus" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Oculus
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Code reference
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus" class="md-nav__link">
+    acme.service.oculus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.api" class="md-nav__link">
+    api
+  </a>
+  
+    <nav class="md-nav" aria-label="api">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress" class="md-nav__link">
+    ingress
+  </a>
+  
+    <nav class="md-nav" aria-label="ingress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event" class="md-nav__link">
+    event
+  </a>
+  
+    <nav class="md-nav" aria-label="event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.ViewSet" class="md-nav__link">
+    ViewSet
+  </a>
+  
+    <nav class="md-nav" aria-label="ViewSet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.ViewSet.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer" class="md-nav__link">
+    CreateSerializer
+  </a>
+  
+    <nav class="md-nav" aria-label="CreateSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate_payload" class="md-nav__link">
+    validate_payload()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate_timestamp" class="md-nav__link">
+    validate_timestamp()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate" class="md-nav__link">
+    validate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.management" class="md-nav__link">
+    management
+  </a>
+  
+    <nav class="md-nav" aria-label="management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands" class="md-nav__link">
+    commands
+  </a>
+  
+    <nav class="md-nav" aria-label="commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-add" class="md-nav__link">
+    application-add
+  </a>
+  
+    <nav class="md-nav" aria-label="application-add">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-add.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-disable" class="md-nav__link">
+    application-disable
+  </a>
+  
+    <nav class="md-nav" aria-label="application-disable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-disable.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.show-stats" class="md-nav__link">
+    show-stats
+  </a>
+  
+    <nav class="md-nav" aria-label="show-stats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.show-stats.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.models" class="md-nav__link">
+    models
+  </a>
+  
+    <nav class="md-nav" aria-label="models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application" class="md-nav__link">
+    application
+  </a>
+  
+    <nav class="md-nav" aria-label="application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application" class="md-nav__link">
+    Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.id" class="md-nav__link">
+    id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.apikey" class="md-nav__link">
+    apikey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.active" class="md-nav__link">
+    active
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.authenticate" class="md-nav__link">
+    authenticate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.disable" class="md-nav__link">
+    disable()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event" class="md-nav__link">
+    event
+  </a>
+  
+    <nav class="md-nav" aria-label="event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event" class="md-nav__link">
+    Event
+  </a>
+  
+    <nav class="md-nav" aria-label="Event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.payload" class="md-nav__link">
+    payload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.category" class="md-nav__link">
+    category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.session" class="md-nav__link">
+    session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.timestamp" class="md-nav__link">
+    timestamp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error" class="md-nav__link">
+    result_error
+  </a>
+  
+    <nav class="md-nav" aria-label="result_error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError" class="md-nav__link">
+    ResultError
+  </a>
+  
+    <nav class="md-nav" aria-label="ResultError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.source" class="md-nav__link">
+    source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.auth" class="md-nav__link">
+    auth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.received_at" class="md-nav__link">
+    received_at
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.request" class="md-nav__link">
+    request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.response" class="md-nav__link">
+    response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus" class="md-nav__link">
+    acme.service.oculus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.api" class="md-nav__link">
+    api
+  </a>
+  
+    <nav class="md-nav" aria-label="api">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress" class="md-nav__link">
+    ingress
+  </a>
+  
+    <nav class="md-nav" aria-label="ingress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event" class="md-nav__link">
+    event
+  </a>
+  
+    <nav class="md-nav" aria-label="event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.ViewSet" class="md-nav__link">
+    ViewSet
+  </a>
+  
+    <nav class="md-nav" aria-label="ViewSet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.ViewSet.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer" class="md-nav__link">
+    CreateSerializer
+  </a>
+  
+    <nav class="md-nav" aria-label="CreateSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate_payload" class="md-nav__link">
+    validate_payload()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate_timestamp" class="md-nav__link">
+    validate_timestamp()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.CreateSerializer.validate" class="md-nav__link">
+    validate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.api.ingress.event.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.management" class="md-nav__link">
+    management
+  </a>
+  
+    <nav class="md-nav" aria-label="management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands" class="md-nav__link">
+    commands
+  </a>
+  
+    <nav class="md-nav" aria-label="commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-add" class="md-nav__link">
+    application-add
+  </a>
+  
+    <nav class="md-nav" aria-label="application-add">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-add.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-disable" class="md-nav__link">
+    application-disable
+  </a>
+  
+    <nav class="md-nav" aria-label="application-disable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.application-disable.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.show-stats" class="md-nav__link">
+    show-stats
+  </a>
+  
+    <nav class="md-nav" aria-label="show-stats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.management.commands.show-stats.Command" class="md-nav__link">
+    Command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acme.service.oculus.models" class="md-nav__link">
+    models
+  </a>
+  
+    <nav class="md-nav" aria-label="models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application" class="md-nav__link">
+    application
+  </a>
+  
+    <nav class="md-nav" aria-label="application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application" class="md-nav__link">
+    Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.id" class="md-nav__link">
+    id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.apikey" class="md-nav__link">
+    apikey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.active" class="md-nav__link">
+    active
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.authenticate" class="md-nav__link">
+    authenticate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.application.Application.disable" class="md-nav__link">
+    disable()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event" class="md-nav__link">
+    event
+  </a>
+  
+    <nav class="md-nav" aria-label="event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event" class="md-nav__link">
+    Event
+  </a>
+  
+    <nav class="md-nav" aria-label="Event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.payload" class="md-nav__link">
+    payload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.category" class="md-nav__link">
+    category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.session" class="md-nav__link">
+    session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.event.Event.timestamp" class="md-nav__link">
+    timestamp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error" class="md-nav__link">
+    result_error
+  </a>
+  
+    <nav class="md-nav" aria-label="result_error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError" class="md-nav__link">
+    ResultError
+  </a>
+  
+    <nav class="md-nav" aria-label="ResultError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.source" class="md-nav__link">
+    source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.auth" class="md-nav__link">
+    auth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.received_at" class="md-nav__link">
+    received_at
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.request" class="md-nav__link">
+    request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acme.service.oculus.models.result_error.ResultError.response" class="md-nav__link">
+    response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Code reference</h1>
+
+<div class="doc doc-object doc-module">
+
+<a id="acme.service.oculus"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="acme.service.oculus.api" class="doc doc-heading">
+        <code>acme.service.oculus.api</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="acme.service.oculus.api.ingress" class="doc doc-heading">
+        <code>acme.service.oculus.api.ingress</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h4 id="acme.service.oculus.api.ingress.event" class="doc doc-heading">
+        <code>acme.service.oculus.api.ingress.event</code>
+
+
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h5 id="acme.service.oculus.api.ingress.event.ViewSet" class="doc doc-heading">
+        <code>
+acme.service.oculus.api.ingress.event.ViewSet        </code>
+
+
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>ViewSet for <code>Event</code> ingress, mounted at <code>/ingress/api/events</code>.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ViewSet</span><span class="p">(</span><span class="n">viewsets</span><span class="o">.</span><span class="n">ViewSet</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  ViewSet for `Event` ingress, mounted at `/ingress/api/events`.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This endpoint should receive almost all traffic, so it doesn&#39;t process events at realtime, instead:</span>
+
+<span class="sd">      - enqueue data using the distributed task queue (Celery)</span>
+<span class="sd">      - acknowledge the reception of data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">create</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span>
+      <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">META</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;HTTP_AUTHORIZATION&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;received_at&quot;</span><span class="p">:</span> <span class="n">django</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">timezone</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">Response</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_202_ACCEPTED</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h6 id="acme.service.oculus.api.ingress.event.ViewSet.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">ViewSet</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span></code>
+
+
+</h6>
+
+    <div class="doc doc-contents ">
+
+      <p>This endpoint should receive almost all traffic, so it doesn't process events at realtime, instead:</p>
+<ul>
+<li>enqueue data using the distributed task queue (Celery)</li>
+<li>acknowledge the reception of data</li>
+</ul>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  This endpoint should receive almost all traffic, so it doesn&#39;t process events at realtime, instead:</span>
+
+<span class="sd">    - enqueue data using the distributed task queue (Celery)</span>
+<span class="sd">    - acknowledge the reception of data</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">create</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span>
+    <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span>
+      <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">META</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;HTTP_AUTHORIZATION&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span>
+      <span class="s2">&quot;received_at&quot;</span><span class="p">:</span> <span class="n">django</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">timezone</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+      <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">)</span>
+  <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">Response</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_202_ACCEPTED</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h5 id="acme.service.oculus.api.ingress.event.CreateSerializer" class="doc doc-heading">
+        <code>
+acme.service.oculus.api.ingress.event.CreateSerializer        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-marshmallow-model"><code>marshmallow-model</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Serializer in charge of validating the received data and persisting the Event record.</p>
+<p>Remarks:
+We use the simpler <code>Serializer</code> instead of <code>ModelSerializer</code> because we don't need the magic and complexity
+from the later.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">CreateSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">Serializer</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Serializer in charge of validating the received data and persisting the Event record.</span>
+
+<span class="sd">  Remarks:</span>
+<span class="sd">  We use the simpler `Serializer` instead of `ModelSerializer` because we don&#39;t need the magic and complexity</span>
+<span class="sd">  from the later.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+  <span class="n">data</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">JSONField</span><span class="p">()</span>  <span class="c1"># type:ignore</span>
+  <span class="n">category</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+  <span class="n">session_id</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+  <span class="n">timestamp</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">()</span>
+
+  <span class="k">def</span> <span class="nf">validate_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Specific payload validations.</span>
+
+<span class="sd">    Remarks:</span>
+<span class="sd">    Current validation rules are quite simpler, basically only checks the presence of the props from the example.</span>
+<span class="sd">    Another alternative is to use `jsonschema` since it allows to check not only the presence of props but also the</span>
+<span class="sd">    type of values. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">errors</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">match</span> <span class="n">category</span><span class="p">:</span>
+      <span class="k">case</span> <span class="s2">&quot;form interaction&quot;</span><span class="p">:</span>
+        <span class="k">match</span> <span class="n">name</span><span class="p">:</span>
+          <span class="k">case</span> <span class="s2">&quot;submit&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">,</span> <span class="s2">&quot;form&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+              <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+      <span class="k">case</span> <span class="s2">&quot;page interaction&quot;</span><span class="p">:</span>
+        <span class="k">match</span> <span class="n">name</span><span class="p">:</span>
+          <span class="k">case</span> <span class="s2">&quot;cta click&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">,</span> <span class="s2">&quot;element&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+              <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+          <span class="k">case</span> <span class="s2">&quot;pageview&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+              <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+    <span class="k">if</span> <span class="n">errors</span><span class="p">:</span>
+      <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">validate_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Ensure event timestamp occurs before the event was received.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;received_at&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="p">:</span>
+      <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s2">&quot;&#39;timestamp&#39; greater than &#39;received_at&#39;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">value</span>
+
+  <span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validate_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Final validation stage:</span>
+
+<span class="sd">      - checks auth credentials</span>
+<span class="sd">      - rename received data props:</span>
+<span class="sd">          - data to payload</span>
+<span class="sd">          - session_id to session</span>
+<span class="sd">      - apply specifics payload validation, depending on category and name</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">models</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;auth&quot;</span><span class="p">])</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+      <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s2">&quot;Invalid auth credentials&quot;</span><span class="p">)</span>
+    <span class="n">validate_data</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">validate_data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
+    <span class="n">validate_data</span><span class="p">[</span><span class="s2">&quot;session&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">validate_data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;session_id&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">validate_payload</span><span class="p">(</span><span class="o">**</span><span class="n">validate_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">validate_data</span>
+
+  <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validate_data</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">models</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">**</span><span class="n">validate_data</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h6 id="acme.service.oculus.api.ingress.event.CreateSerializer.validate_payload" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">CreateSerializer</span><span class="o">.</span><span class="n">validate_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+
+</h6>
+
+    <div class="doc doc-contents ">
+
+      <p>Specific payload validations.</p>
+<p>Remarks:
+Current validation rules are quite simpler, basically only checks the presence of the props from the example.
+Another alternative is to use <code>jsonschema</code> since it allows to check not only the presence of props but also the
+type of values. </p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validate_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Specific payload validations.</span>
+
+<span class="sd">  Remarks:</span>
+<span class="sd">  Current validation rules are quite simpler, basically only checks the presence of the props from the example.</span>
+<span class="sd">  Another alternative is to use `jsonschema` since it allows to check not only the presence of props but also the</span>
+<span class="sd">  type of values. </span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">errors</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="k">match</span> <span class="n">category</span><span class="p">:</span>
+    <span class="k">case</span> <span class="s2">&quot;form interaction&quot;</span><span class="p">:</span>
+      <span class="k">match</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">case</span> <span class="s2">&quot;submit&quot;</span><span class="p">:</span>
+          <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">,</span> <span class="s2">&quot;form&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+    <span class="k">case</span> <span class="s2">&quot;page interaction&quot;</span><span class="p">:</span>
+      <span class="k">match</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">case</span> <span class="s2">&quot;cta click&quot;</span><span class="p">:</span>
+          <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">,</span> <span class="s2">&quot;element&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+        <span class="k">case</span> <span class="s2">&quot;pageview&quot;</span><span class="p">:</span>
+          <span class="k">if</span> <span class="n">missing</span> <span class="o">:=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="n">payload</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">errors</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;required props&quot;</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+  <span class="k">if</span> <span class="n">errors</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h6 id="acme.service.oculus.api.ingress.event.CreateSerializer.validate_timestamp" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">CreateSerializer</span><span class="o">.</span><span class="n">validate_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+
+
+</h6>
+
+    <div class="doc doc-contents ">
+
+      <p>Ensure event timestamp occurs before the event was received.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validate_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Ensure event timestamp occurs before the event was received.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;received_at&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s2">&quot;&#39;timestamp&#39; greater than &#39;received_at&#39;&quot;</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">value</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h6 id="acme.service.oculus.api.ingress.event.CreateSerializer.validate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">CreateSerializer</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validate_data</span><span class="p">)</span></code>
+
+
+</h6>
+
+    <div class="doc doc-contents ">
+
+      <p>Final validation stage:</p>
+<ul>
+<li>checks auth credentials</li>
+<li>rename received data props:<ul>
+<li>data to payload</li>
+<li>session_id to session</li>
+</ul>
+</li>
+<li>apply specifics payload validation, depending on category and name</li>
+</ul>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validate_data</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Final validation stage:</span>
+
+<span class="sd">    - checks auth credentials</span>
+<span class="sd">    - rename received data props:</span>
+<span class="sd">        - data to payload</span>
+<span class="sd">        - session_id to session</span>
+<span class="sd">    - apply specifics payload validation, depending on category and name</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">try</span><span class="p">:</span>
+    <span class="n">models</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;auth&quot;</span><span class="p">])</span>
+  <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s2">&quot;Invalid auth credentials&quot;</span><span class="p">)</span>
+  <span class="n">validate_data</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">validate_data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
+  <span class="n">validate_data</span><span class="p">[</span><span class="s2">&quot;session&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">validate_data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;session_id&quot;</span><span class="p">)</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">validate_payload</span><span class="p">(</span><span class="o">**</span><span class="n">validate_data</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">validate_data</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h5 id="acme.service.oculus.api.ingress.event.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">auth</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">received_at</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></code>
+
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Process previously enqueued Event data, creating the <code>Event</code> record or the <code>ResultError</code> with details for further
+inspection.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/api/ingress/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@celery</span><span class="o">.</span><span class="n">shared_task</span>
+<span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">auth</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">received_at</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Process previously enqueued Event data, creating the `Event` record or the `ResultError` with details for further</span>
+<span class="sd">  inspection.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">serializer</span> <span class="o">=</span> <span class="n">CreateSerializer</span><span class="p">(</span>
+    <span class="n">context</span><span class="o">=</span><span class="p">{</span>
+      <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="n">auth</span><span class="p">,</span>
+      <span class="s2">&quot;received_at&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">fromisoformat</span><span class="p">(</span><span class="n">received_at</span><span class="p">),</span>
+    <span class="p">},</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+  <span class="p">)</span>
+  <span class="k">try</span><span class="p">:</span>
+    <span class="n">serializer</span><span class="o">.</span><span class="n">is_valid</span><span class="p">(</span><span class="n">raise_exception</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">serializer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+  <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+    <span class="n">models</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+      <span class="n">source</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">SOURCE_EVENT</span><span class="p">,</span>
+      <span class="n">auth</span><span class="o">=</span><span class="n">auth</span><span class="p">,</span>
+      <span class="n">received_at</span><span class="o">=</span><span class="n">received_at</span><span class="p">,</span>
+      <span class="n">request</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+      <span class="n">response</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{exc}</span><span class="se">\n\n</span><span class="si">{tcb}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">exc</span><span class="o">=</span><span class="n">exc</span><span class="p">,</span>
+        <span class="n">tcb</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_tb</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">__traceback__</span><span class="p">))</span>
+      <span class="p">),</span>
+    <span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="acme.service.oculus.management" class="doc doc-heading">
+        <code>acme.service.oculus.management</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="acme.service.oculus.management.commands" class="doc doc-heading">
+        <code>acme.service.oculus.management.commands</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h4 id="acme.service.oculus.management.commands.application-add" class="doc doc-heading">
+        <code>acme.service.oculus.management.commands.application-add</code>
+
+
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h5 id="acme.service.oculus.management.commands.application-add.Command" class="doc doc-heading">
+        <code>
+acme.service.oculus.management.commands.application-add.Command        </code>
+
+
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Used for creating credentials for a new Application (client)
+<div class="highlight"><pre><span></span><code>$ poetry run django-admin application-add app-1
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;</span>,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;app-1&quot;</span>,
+  <span class="s2">&quot;apikey&quot;</span>: <span class="s2">&quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;</span>,
+  <span class="s2">&quot;active&quot;</span>: <span class="nb">true</span>
+<span class="o">}</span>
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/management/commands/application-add.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">django</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">BaseCommand</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Used for creating credentials for a new Application (client)</span>
+<span class="sd">  ``` sh</span>
+<span class="sd">  $ poetry run django-admin application-add app-1</span>
+<span class="sd">  {</span>
+<span class="sd">    &quot;id&quot;: &quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;,</span>
+<span class="sd">    &quot;name&quot;: &quot;app-1&quot;,</span>
+<span class="sd">    &quot;apikey&quot;: &quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;,</span>
+<span class="sd">    &quot;active&quot;: true</span>
+<span class="sd">  }</span>
+<span class="sd">  ```</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">help</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">:</span> <span class="n">django</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">CommandParser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">application</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+      <span class="n">response</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;err&quot;</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+        <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+      <span class="p">}</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+      <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">response</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">id</span><span class="p">),</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+        <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">apikey</span><span class="p">,</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">active</span><span class="p">,</span>
+      <span class="p">}</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+      <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h4 id="acme.service.oculus.management.commands.application-disable" class="doc doc-heading">
+        <code>acme.service.oculus.management.commands.application-disable</code>
+
+
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h5 id="acme.service.oculus.management.commands.application-disable.Command" class="doc doc-heading">
+        <code>
+acme.service.oculus.management.commands.application-disable.Command        </code>
+
+
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Used for disabling access to an existing Application (client)
+<div class="highlight"><pre><span></span><code>$ poetry run django-admin application-disable e5490d29-f9d6-425c-b74e-38ae9f145b21
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;</span>,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;app2&quot;</span>,
+  <span class="s2">&quot;apikey&quot;</span>: <span class="s2">&quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;</span>,
+  <span class="s2">&quot;active&quot;</span>: <span class="nb">false</span>
+<span class="o">}</span>
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/management/commands/application-disable.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">django</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">BaseCommand</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Used for disabling access to an existing Application (client)</span>
+<span class="sd">  ``` sh</span>
+<span class="sd">  $ poetry run django-admin application-disable e5490d29-f9d6-425c-b74e-38ae9f145b21</span>
+<span class="sd">  {</span>
+<span class="sd">    &quot;id&quot;: &quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;,</span>
+<span class="sd">    &quot;name&quot;: &quot;app2&quot;,</span>
+<span class="sd">    &quot;apikey&quot;: &quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;,</span>
+<span class="sd">    &quot;active&quot;: false</span>
+<span class="sd">  }</span>
+<span class="sd">  ```</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">help</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">:</span> <span class="n">django</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">CommandParser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">application</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">disable</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+      <span class="n">response</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;err&quot;</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+        <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+      <span class="p">}</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+      <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">response</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">id</span><span class="p">),</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+        <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">apikey</span><span class="p">,</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">active</span><span class="p">,</span>
+      <span class="p">}</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+      <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h4 id="acme.service.oculus.management.commands.show-stats" class="doc doc-heading">
+        <code>acme.service.oculus.management.commands.show-stats</code>
+
+
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h5 id="acme.service.oculus.management.commands.show-stats.Command" class="doc doc-heading">
+        <code>
+acme.service.oculus.management.commands.show-stats.Command        </code>
+
+
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Show stats for service data
+<div class="highlight"><pre><span></span><code>$ poetry run django-admin show-stats
+<span class="o">{</span>
+  <span class="s2">&quot;application&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;count&quot;</span>: <span class="m">2</span>,
+    <span class="s2">&quot;items&quot;</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;7a6d47fa-00e3-49fd-a6bf-bca002d50db9&quot;</span>,
+        <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;app&quot;</span>,
+        <span class="s2">&quot;apikey&quot;</span>: <span class="s2">&quot;eyJjcmVhdGVk...vlM2Sc0XJDsM&quot;</span>,
+        <span class="s2">&quot;active&quot;</span>: <span class="nb">true</span>
+      <span class="o">}</span>,
+      <span class="o">{</span>
+        <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;</span>,
+        <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;app2&quot;</span>,
+        <span class="s2">&quot;apikey&quot;</span>: <span class="s2">&quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;</span>,
+        <span class="s2">&quot;active&quot;</span>: <span class="nb">false</span>
+      <span class="o">}</span>
+    <span class="o">]</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;events&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;count&quot;</span>: <span class="m">19</span>,
+    <span class="s2">&quot;latest&quot;</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">&quot;id&quot;</span>: <span class="m">11</span>,
+        <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;pageview&quot;</span>,
+        <span class="s2">&quot;payload&quot;</span>: <span class="o">{</span>
+          <span class="s2">&quot;host&quot;</span>: <span class="s2">&quot;www.consumeraffairs.com&quot;</span>,
+          <span class="s2">&quot;path&quot;</span>: <span class="s2">&quot;/&quot;</span>
+        <span class="o">}</span>,
+        <span class="s2">&quot;category&quot;</span>: <span class="s2">&quot;page interaction&quot;</span>,
+        <span class="s2">&quot;session&quot;</span>: <span class="s2">&quot;e2085be5-9137-4e4e-80b5-f1ffddc25423&quot;</span>,
+        <span class="s2">&quot;timestamp&quot;</span>: <span class="s2">&quot;2021-01-01T09:15:27.243860+00:00&quot;</span>
+      <span class="o">}</span>
+    <span class="o">]</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/management/commands/show-stats.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">django</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">BaseCommand</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Show stats for service data</span>
+<span class="sd">  ``` sh</span>
+<span class="sd">  $ poetry run django-admin show-stats</span>
+<span class="sd">  {</span>
+<span class="sd">    &quot;application&quot;: {</span>
+<span class="sd">      &quot;count&quot;: 2,</span>
+<span class="sd">      &quot;items&quot;: [</span>
+<span class="sd">        {</span>
+<span class="sd">          &quot;id&quot;: &quot;7a6d47fa-00e3-49fd-a6bf-bca002d50db9&quot;,</span>
+<span class="sd">          &quot;name&quot;: &quot;app&quot;,</span>
+<span class="sd">          &quot;apikey&quot;: &quot;eyJjcmVhdGVk...vlM2Sc0XJDsM&quot;,</span>
+<span class="sd">          &quot;active&quot;: true</span>
+<span class="sd">        },</span>
+<span class="sd">        {</span>
+<span class="sd">          &quot;id&quot;: &quot;e5490d29-f9d6-425c-b74e-38ae9f145b21&quot;,</span>
+<span class="sd">          &quot;name&quot;: &quot;app2&quot;,</span>
+<span class="sd">          &quot;apikey&quot;: &quot;eyJjcmMDAifQ...UbC3qekEMSLw&quot;,</span>
+<span class="sd">          &quot;active&quot;: false</span>
+<span class="sd">        }</span>
+<span class="sd">      ]</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;events&quot;: {</span>
+<span class="sd">      &quot;count&quot;: 19,</span>
+<span class="sd">      &quot;latest&quot;: [</span>
+<span class="sd">        {</span>
+<span class="sd">          &quot;id&quot;: 11,</span>
+<span class="sd">          &quot;name&quot;: &quot;pageview&quot;,</span>
+<span class="sd">          &quot;payload&quot;: {</span>
+<span class="sd">            &quot;host&quot;: &quot;www.consumeraffairs.com&quot;,</span>
+<span class="sd">            &quot;path&quot;: &quot;/&quot;</span>
+<span class="sd">          },</span>
+<span class="sd">          &quot;category&quot;: &quot;page interaction&quot;,</span>
+<span class="sd">          &quot;session&quot;: &quot;e2085be5-9137-4e4e-80b5-f1ffddc25423&quot;,</span>
+<span class="sd">          &quot;timestamp&quot;: &quot;2021-01-01T09:15:27.243860+00:00&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">      ]</span>
+<span class="sd">    }</span>
+<span class="sd">  }</span>
+<span class="sd">  ```</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">help</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+    <span class="n">applications</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">events</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s2">&quot;application&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="n">applications</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span>
+        <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">id</span><span class="p">),</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+          <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">apikey</span><span class="p">,</span>
+          <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="n">application</span><span class="o">.</span><span class="n">active</span><span class="p">,</span>
+        <span class="p">}</span> <span class="k">for</span> <span class="n">application</span> <span class="ow">in</span> <span class="n">applications</span><span class="p">],</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;events&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="n">events</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span>
+        <span class="s2">&quot;latest&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+          <span class="s2">&quot;payload&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">payload</span><span class="p">,</span>
+          <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">category</span><span class="p">,</span>
+          <span class="s2">&quot;session&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">session</span><span class="p">,</span>
+          <span class="s2">&quot;timestamp&quot;</span><span class="p">:</span> <span class="n">event</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+        <span class="p">}</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">[:</span><span class="mi">1</span><span class="p">]],</span>
+      <span class="p">},</span>
+    <span class="p">}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="acme.service.oculus.models" class="doc doc-heading">
+        <code>acme.service.oculus.models</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="acme.service.oculus.models.application" class="doc doc-heading">
+        <code>acme.service.oculus.models.application</code>
+
+
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h4 id="acme.service.oculus.models.application.Application" class="doc doc-heading">
+        <code>
+acme.service.oculus.models.application.Application        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-model"><code>django-model</code></small>
+  </span>
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+      <p>A trusted-client for the system</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/application.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Application</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  A trusted-client for the system</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="nb">id</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">UUIDField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">apikey</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">get_encrypted_apikey</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">active</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+  <span class="nd">@classmethod</span>
+  <span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">apikey</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="s2">&quot;Application&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Check `apikey` is cryptographically valid and that corresponds to an `active` `Application` model instance</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">apikey</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;ApiKey &quot;</span><span class="p">):</span>
+      <span class="n">apikey</span> <span class="o">=</span> <span class="n">apikey</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+    <span class="n">get_decrypted_apikey</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="n">apikey</span><span class="p">)</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="n">apikey</span><span class="p">,</span> <span class="n">active</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">obj</span>
+
+  <span class="nd">@classmethod</span>
+  <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Application&quot;</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create an `Application` model instance with the provided `name`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">obj</span>
+
+  <span class="nd">@classmethod</span>
+  <span class="k">def</span> <span class="nf">disable</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Application&quot;</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Update the `Application` model instance for the provided `id`, setting `active` to `False`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">active</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">update_fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;active&quot;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">obj</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.id" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">id</span><span class="p">:</span> <span class="n">UUIDField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>id</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.name" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>name</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.apikey" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">apikey</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>apikey</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.active" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">active</span><span class="p">:</span> <span class="n">BooleanField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>active</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.authenticate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">apikey</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Application</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Check <code>apikey</code> is cryptographically valid and that corresponds to an <code>active</code> <code>Application</code> model instance</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/application.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">apikey</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="s2">&quot;Application&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Check `apikey` is cryptographically valid and that corresponds to an `active` `Application` model instance</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">if</span> <span class="n">apikey</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;ApiKey &quot;</span><span class="p">):</span>
+    <span class="n">apikey</span> <span class="o">=</span> <span class="n">apikey</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+  <span class="n">get_decrypted_apikey</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="n">apikey</span><span class="p">)</span>
+  <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">apikey</span><span class="o">=</span><span class="n">apikey</span><span class="p">,</span> <span class="n">active</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">obj</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Application</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Create an <code>Application</code> model instance with the provided <code>name</code></p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/application.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Application&quot;</span><span class="p">:</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Create an `Application` model instance with the provided `name`</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">obj</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h5 id="acme.service.oculus.models.application.Application.disable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">disable</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="n">UUID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Application</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Update the <code>Application</code> model instance for the provided <code>id</code>, setting <code>active</code> to <code>False</code></p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/application.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">disable</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Application&quot;</span><span class="p">:</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Update the `Application` model instance for the provided `id`, setting `active` to `False`</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+  <span class="n">obj</span><span class="o">.</span><span class="n">active</span> <span class="o">=</span> <span class="kc">False</span>
+  <span class="n">obj</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">update_fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;active&quot;</span><span class="p">])</span>
+  <span class="k">return</span> <span class="n">obj</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="acme.service.oculus.models.event" class="doc doc-heading">
+        <code>acme.service.oculus.models.event</code>
+
+
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h4 id="acme.service.oculus.models.event.Event" class="doc doc-heading">
+        <code>
+acme.service.oculus.models.event.Event        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-model"><code>django-model</code></small>
+  </span>
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+      <p>An event <strong>received</strong> by the api and <strong>processed</strong> by the distributed task queue</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/event.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Event</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  An event **received** by the api and **processed** by the distributed task queue</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+  <span class="n">payload</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">JSONField</span><span class="p">()</span>
+  <span class="n">category</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+  <span class="n">session</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+  <span class="n">timestamp</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">()</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.event.Event.name" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>name</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.event.Event.payload" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">payload</span><span class="p">:</span> <span class="n">JSONField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>payload</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.event.Event.category" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">category</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>category</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.event.Event.session" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">session</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>session</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.event.Event.timestamp" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">timestamp</span><span class="p">:</span> <span class="n">DateTimeField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>timestamp</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="acme.service.oculus.models.result_error" class="doc doc-heading">
+        <code>acme.service.oculus.models.result_error</code>
+
+
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h4 id="acme.service.oculus.models.result_error.ResultError" class="doc doc-heading">
+        <code>
+acme.service.oculus.models.result_error.ResultError        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-model"><code>django-model</code></small>
+  </span>
+
+</h4>
+
+    <div class="doc doc-contents ">
+
+      <p>A result error record for further inspection</p>
+
+        <details class="quote">
+          <summary>Source code in <code>oculus/models/result_error.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ResultError</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  A result error record for further inspection</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">SOURCE_EVENT</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">SOURCE_CHOICES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">SOURCE_EVENT</span><span class="p">,</span> <span class="s2">&quot;event&quot;</span><span class="p">),</span>
+  <span class="p">]</span>
+
+  <span class="n">source</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">PositiveSmallIntegerField</span><span class="p">(</span><span class="n">choices</span><span class="o">=</span><span class="n">SOURCE_CHOICES</span><span class="p">)</span>
+  <span class="n">auth</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">210</span><span class="p">)</span>
+  <span class="n">received_at</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">()</span>
+  <span class="n">request</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">JSONField</span><span class="p">()</span>
+  <span class="n">response</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.result_error.ResultError.source" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">result_error</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">source</span><span class="p">:</span> <span class="n">PositiveSmallIntegerField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>source</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.result_error.ResultError.auth" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">result_error</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">auth</span><span class="p">:</span> <span class="n">CharField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>auth</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.result_error.ResultError.received_at" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">result_error</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">received_at</span><span class="p">:</span> <span class="n">DateTimeField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>received at</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.result_error.ResultError.request" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">result_error</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">request</span><span class="p">:</span> <span class="n">JSONField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>request</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="acme.service.oculus.models.result_error.ResultError.response" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">acme</span><span class="o">.</span><span class="n">service</span><span class="o">.</span><span class="n">oculus</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">result_error</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">response</span><span class="p">:</span> <span class="n">TextField</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-django-field"><code>django-field</code></small>
+  </span>
+
+</h5>
+
+    <div class="doc doc-contents ">
+
+      <p>response</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      
+    
+  </body>
+</html>
