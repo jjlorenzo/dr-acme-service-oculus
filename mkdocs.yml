@@ -5,16 +5,20 @@ docs_dir: src/acme/service/oculus/docs
 extra_css:
   - static/css/extra.css
 
+markdown_extensions:
+  - pymdownx.superfences
+
 plugins:
 - mkdocstrings:
     enable_inventory: false
     handlers:
       python:
         rendering:
+          members_order: source
           show_bases: no
           show_object_full_path: yes
           show_signature_annotations: yes
-          show_source: no
+          show_source: yes
         setup_commands:
           - import os
           - os.environ.setdefault("DJANGO_SETTINGS_MODULE", "acme.service.oculus.conf")

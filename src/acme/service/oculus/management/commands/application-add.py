@@ -7,7 +7,7 @@ from ... import models
 class Command(django.core.management.base.BaseCommand):
   """
   Used for creating credentials for a new Application (client)
-  ```
+  ``` sh
   $ poetry run django-admin application-add app-1
   {
     "id": "e5490d29-f9d6-425c-b74e-38ae9f145b21",

@@ -7,7 +7,7 @@ from ... import models
 class Command(django.core.management.base.BaseCommand):
   """
   Show stats for service data
-  ```
+  ``` sh
   $ poetry run django-admin show-stats
   {
     "application": {

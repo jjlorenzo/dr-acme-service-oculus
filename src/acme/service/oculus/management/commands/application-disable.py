@@ -8,7 +8,7 @@ from ... import models
 class Command(django.core.management.base.BaseCommand):
   """
   Used for disabling access to an existing Application (client)
-  ```
+  ``` sh
   $ poetry run django-admin application-disable e5490d29-f9d6-425c-b74e-38ae9f145b21
   {
     "id": "e5490d29-f9d6-425c-b74e-38ae9f145b21",
