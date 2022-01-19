@@ -1,0 +1,61 @@
+networks:
+  default:
+    name: oculus
+
+services:
+  celery:
+    image: python:3.10-slim
+    container_name: oculus-celery
+    volumes:
+      - python--opt:/opt
+    working_dir: /opt
+    command: celery --app=acme.service.oculus.cdtq worker --uid=nobody
+    environment:
+      - DJANGO_SETTINGS_MODULE=acme.service.oculus.conf
+      - OCULUS_BROKER=amqp://guest:guest@rabbitmq//
+      - OCULUS_DATABASE_HOST=postgres
+      - OCULUS_DATABASE_PASSWORD=postgres
+      - OCULUS_DATABASE_USER=postgres
+      - OCULUS_DEBUG=no
+      - PATH=/opt/venv/bin:$PATH
+  postgres:
+    image: postgres:14.1
+    container_name: oculus-postgres
+    volumes:
+      - postgres--var-lib-postgresql-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=acme-service-oculus
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+  python:
+    image: python:3.10-slim
+    container_name: oculus-python
+    volumes:
+      - python--opt:/opt
+    working_dir: /opt
+    ports:
+      - "8000:8000"
+    command: gunicorn --bind=0.0.0.0 --user=nobody acme.service.oculus.wsgi:application
+    environment:
+      - DJANGO_SETTINGS_MODULE=acme.service.oculus.conf
+      - OCULUS_BROKER=amqp://guest:guest@rabbitmq//
+      - OCULUS_DATABASE_HOST=postgres
+      - OCULUS_DATABASE_PASSWORD=postgres
+      - OCULUS_DATABASE_USER=postgres
+      - OCULUS_DEBUG=no
+      - PATH=/opt/venv/bin:$PATH
+  rabbitmq:
+    image: rabbitmq:3.9.12
+    container_name: oculus-rabbitmq
+    volumes:
+      - rabbitmq--var-lib-rabbitmq:/var/lib/rabbitmq
+
+version: "3.9"
+
+volumes:
+  python--opt:
+    name: oculus--python--opt
+  postgres--var-lib-postgresql-data:
+    name: oculus--postgres--var-lib-postgresql-data
+  rabbitmq--var-lib-rabbitmq:
+    name: oculus--rabbitmq--var-lib-rabbitmq
