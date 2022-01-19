@@ -11,3 +11,17 @@ class Event(models.Model):
   category = models.CharField(max_length=20)
   session = models.CharField(max_length=50)
   timestamp = models.DateTimeField()
+
+  class Meta:
+    constraints = [
+      models.UniqueConstraint(
+        fields=[
+          "name",
+          "payload",
+          "category",
+          "session",
+          "timestamp",
+        ],
+        name="event-unique",
+      ),
+    ]

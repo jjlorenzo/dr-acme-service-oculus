@@ -1,4 +1,5 @@
 import celery
+import django.db
 import django.utils.timezone
 import traceback
 from ... import models
@@ -46,7 +47,11 @@ def create(*, auth: str, received_at: str, data):
   )
   try:
     serializer.is_valid(raise_exception=True)
-    serializer.save()
+    try:
+      serializer.save()
+    except django.db.IntegrityError as exc:
+      if not str(exc).startswith('duplicate key value violates unique constraint "event-unique"'):
+        raise exc
   except Exception as exc:
     models.ResultError.objects.create(
       source=models.ResultError.SOURCE_EVENT,
