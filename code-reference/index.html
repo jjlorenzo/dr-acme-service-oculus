@@ -1555,7 +1555,11 @@ inspection.</p>
   <span class="p">)</span>
   <span class="k">try</span><span class="p">:</span>
     <span class="n">serializer</span><span class="o">.</span><span class="n">is_valid</span><span class="p">(</span><span class="n">raise_exception</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">serializer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">serializer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">django</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">IntegrityError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+      <span class="k">if</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;duplicate key value violates unique constraint &quot;event-unique&quot;&#39;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">exc</span>
   <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
     <span class="n">models</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
       <span class="n">source</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">ResultError</span><span class="o">.</span><span class="n">SOURCE_EVENT</span><span class="p">,</span>
@@ -1922,6 +1926,7 @@ acme.service.oculus.management.commands.application-disable.Command        </cod
     </div>
 
   </div>
+
 
 
 
@@ -2544,6 +2549,20 @@ acme.service.oculus.models.event.Event        </code>
   <span class="n">category</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
   <span class="n">session</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
   <span class="n">timestamp</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">()</span>
+
+  <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+    <span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="n">models</span><span class="o">.</span><span class="n">UniqueConstraint</span><span class="p">(</span>
+        <span class="n">fields</span><span class="o">=</span><span class="p">[</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;payload&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;category&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;session&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
+        <span class="p">],</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;event-unique&quot;</span><span class="p">,</span>
+      <span class="p">),</span>
+    <span class="p">]</span>
 </code></pre></div>
         </details>
 

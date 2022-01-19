@@ -192,6 +192,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    TODO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-the-output-of-docker-composesh" class="md-nav__link">
+    Summary of the output of docker-compose.sh:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -248,6 +289,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    TODO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-the-output-of-docker-composesh" class="md-nav__link">
+    Summary of the output of docker-compose.sh:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -264,6 +346,109 @@
 <h1 id="overview">Overview</h1>
 <h2 id="what-is-acmeserviceoculus">What is <code>acme.service.oculus</code>?</h2>
 <p>A service that collect user behaviour events from multiple applications, aggregates and allows to query the information.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul>
+<li>For recognizing <code>Applications</code> as "trusted-clients" I use a simpler mechanism of sharing an ApiKey, that impl could be
+  improved with a more secure mechanism, right now is just a signed value that can be unsigned with django <code>SECRET_KEY</code>.
+  I don't include other imrpovements here because it is for now a POC, but later this <code>SECRET_KEY</code> must be configurable
+  instead of a hard-coded value. Probably it worth to take a look at 
+  <a href="https://pypi.org/project/djangorestframework-api-key/">djangorestframework-api-key</a> for a more secure implementation.</li>
+<li>Since the system will receive a lot of traffic from <code>Applications</code>, the event processing is async using <code>celery</code> as
+  the distributed task queue. Instead of ensuring that multiple workers doesn't process the same event at the same time
+  I follow a simpler approach for now, ensuring that doesn't exists duplicated events.</li>
+<li>For preventing duplicated events, I use a db contrains, using all fields of the event, another alternative could be
+  generating a hash for event at ingress time, but inpacts the performance of the ingress process for all events.</li>
+<li>For the ingress process I prefer a simpler implementation that doesn't use to much features from celery except
+  the async task processing, of course. So instead of using a result backend, I manually store errors that can arrise
+  in the process.</li>
+<li>For the anaylics endpoints, I just implement the one related to the <code>Event</code>, and I choose to stick with rest-framework
+  as simpler as possible, not using <code>GenericViewSet</code> nor <code>ModelSerializer</code>, because imho in this case it doesn't worth
+  the magic that they introduce.</li>
+</ul>
+<h2 id="interfaces">Interfaces</h2>
+<p>The application has two kind of interfaces: (<code>cli</code> and <code>http</code>)</p>
+<ul>
+<li><code>cli</code>: to be used by admins for <code>Applications</code> management, etc.</li>
+<li><code>http.analytics</code>: to be used by analytics team</li>
+<li><code>http.ingress</code>: to be used by <code>Applications</code> for <code>Event</code> submission</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>I think that could be interesting to relate the <code>Event</code> with the <code>Application</code>, so you can search for an specific 
+  <code>Application</code>.</li>
+<li><code>ResultError</code> query interface, either <code>http</code> or <code>cli</code>.</li>
+<li>Complete the testsuite, covering the <code>ingress</code> process.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>For local development I use <a href="https://python-poetry.org/">poetry</a> and services that I have locally installed in
+my workstation, e.g. postgres, rabbitmq, etc. But if you prefer something based on docker, you can take a look at 
+<code>docker-compose.sh</code>, it's a simpler container orchestration that runs the whole stack with an approach that I tend to 
+use where I don't build images, but use the containers as artifacts builders and runners, e.g. the aretifacts are stored
+in docker named volumes.</p>
+<h3 id="summary-of-the-output-of-docker-composesh">Summary of the output of <code>docker-compose.sh</code>:</h3>
+<div class="highlight"><pre><span></span><code>$ ./docker-compose.sh
+
++ docker compose down --remove-orphans --volumes
+
++ docker compose up --remove-orphans --renew-anon-volumes --no-start
+<span class="o">[</span>+<span class="o">]</span> Running <span class="m">8</span>/8
+ ⠿ Network oculus                                      Created       <span class="m">0</span>.0s
+ ⠿ Volume <span class="s2">&quot;oculus--rabbitmq--var-lib-rabbitmq&quot;</span>         Created       <span class="m">0</span>.0s
+ ⠿ Volume <span class="s2">&quot;oculus--python--opt&quot;</span>                        Created       <span class="m">0</span>.0s
+ ⠿ Volume <span class="s2">&quot;oculus--postgres--var-lib-postgresql-data&quot;</span>  Created       <span class="m">0</span>.0s
+ ⠿ Container oculus-python                             Created       <span class="m">0</span>.1s
+ ⠿ Container oculus-postgres                           Created       <span class="m">0</span>.1s
+ ⠿ Container oculus-celery                             Created       <span class="m">0</span>.1s
+ ⠿ Container oculus-rabbitmq                           Created       <span class="m">0</span>.1s
+
++ docker compose up postgres --detach
+<span class="o">[</span>+<span class="o">]</span> Running <span class="m">1</span>/1
+ ⠿ Container oculus-postgres  Started                                <span class="m">0</span>.3s
+
++ docker compose up rabbitmq --detach
+<span class="o">[</span>+<span class="o">]</span> Running <span class="m">1</span>/1
+ ⠿ Container oculus-rabbitmq  Started                                <span class="m">0</span>.4s
+
++ poetry build -f sdist
+Building acme.service.oculus <span class="o">(</span><span class="m">0</span>.1.0<span class="o">)</span>
+  - Building sdist
+  - Built acme.service.oculus-0.1.0.tar.gz
+
++ docker compose run --rm python mkdir -p /opt/dist
+
++ docker compose run --rm --volume<span class="o">=</span>./dist:/dist python cp /dist/acme.service.oculus-0.1.0.tar.gz /opt/dist/
+
++ rm -rf dist/acme.service.oculus-0.1.0.tar.gz
+
++ docker compose run --rm python python -m venv /opt/venv
+
++ docker compose run --rm python python -m pip install --upgrade pip
+...
+Successfully installed pip-21.3.1
+
++ docker compose run --rm python pip install /opt/dist/acme.service.oculus-0.1.0.tar.gz
+...
+Successfully installed acme.service.oculus-0.1.0 ...
+
+
++ docker compose <span class="nb">exec</span> postgres pg_isready --quiet
+
++ docker compose run --rm python django-admin migrate
+Operations to perform:
+  Apply all migrations: oculus
+Running migrations:
+  Applying oculus.0001_create_model_application... OK
+  Applying oculus.0002_create_model_event... OK
+  Applying oculus.0003_create_model_result_error... OK
+  Applying oculus.0004_create_constraint_event-unique... OK
+
++ <span class="nb">exec</span> docker compose up --detach
+<span class="o">[</span>+<span class="o">]</span> Running <span class="m">4</span>/4
+ ⠿ Container oculus-postgres  Running                                <span class="m">0</span>.0s
+ ⠿ Container oculus-rabbitmq  Running                                <span class="m">0</span>.0s
+ ⠿ Container oculus-celery    Started                                <span class="m">0</span>.3s
+ ⠿ Container oculus-python    Started
+</code></pre></div>
 
               
             </article>
